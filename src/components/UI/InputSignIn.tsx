@@ -1,12 +1,12 @@
 import React from "react";
-// import  { GithubSignIn} } from '../../hooks/context/userData'
-import { GithubSignIn } from "../../hooks/context/userData";
-
+import { useAuth } from "../../hooks/context/userData";
 type Props = {};
 
 const InputSignIn = (props: Props) => {
+  const { GithubSignIn } = useAuth();
   const HandelSignIn = () => {
     GithubSignIn();
+    // navigate to home ,
   };
   return (
     <div>
