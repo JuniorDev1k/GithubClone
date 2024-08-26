@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./index.css";
-import { AuthProvider } from "../../hooks/context/userData";
+// import { AuthProvider } from "../../hooks/context/userData";
 
 import {
   Homescreen,
@@ -16,7 +16,7 @@ type Props = {};
 const App = (props: Props) => {
   return (
     <>
-      <AuthProvider>
+      {/* <AuthProvider> */}
         <Routes>
           <Route path="/" element={<Homescreen />} />
           <Route path="/RepositoryScreen" element={<RepositoryScreen />} />
@@ -25,7 +25,7 @@ const App = (props: Props) => {
           <Route path="/Login" element={<LoginScreen />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </AuthProvider>
+      {/* </AuthProvider> */}
     </>
   );
 };

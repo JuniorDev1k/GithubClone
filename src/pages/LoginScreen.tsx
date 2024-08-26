@@ -1,14 +1,11 @@
-import React from "react";
-import InputSignIn from "../components/UI/InputSignIn";
-type Props = {};
+import React from 'react'
 
-const LoginScreen = (props: Props) => {
+type Props = {}
+
+function LoginScreen({}: Props) {
   return (
-    <div>
-      <h1>LoginScreen</h1>
-      <InputSignIn />
-    </div>
-  );
-};
+    <div>LoginScreen</div>
+  )
+}
 
-export default LoginScreen;
+export default LoginScreen
