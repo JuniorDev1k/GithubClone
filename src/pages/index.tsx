@@ -9,7 +9,7 @@ export {
   Homescreen,
   LoginScreen,
   RepositoryScreen,
-  SignupScreen,
+  SignupScreen, 
   CreatePost,
   NotFound,
 };
